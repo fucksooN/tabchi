@@ -1,3 +1,30 @@
+
+Skip to content
+This repository
+
+    Pull requests
+    Issues
+    Marketplace
+    Gist
+
+    @fucksooN
+
+0
+0
+
+    0
+
+fucksooN/tabchi
+Code
+Issues 0
+Pull requests 0
+Projects 0
+Wiki
+Settings
+tabchi/tabchi.lua
+c19f22a 8 minutes ago
+@fucksooN fucksooN Create tabchi.lua
+2628 lines (2625 sloc) 110 KB
 JSON = loadfile("dkjson.lua")()
 URL = require("socket.url")
 ltn12 = require("ltn12")
@@ -1220,12 +1247,10 @@ function a3(msg)
     local ah = function(y, z, ad)
       if z.photos_[0] then
         sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, z.photos_[0].sizes_[1].photo_.persistent_id_, "> Chat ID : " .. msg.chat_id_ .. [[
-
 > Your ID: ]] .. msg.sender_user_id_)
       else
         tdcli.sendMessage(msg.chat_id_, msg.id_, 1, [[
 *شما هیچ عکسی ندارید*!!
-
 > *شناسه گروه* : `]] .. msg.chat_id_ .. [[
 `
 > *شناسه شما*: `]] .. msg.sender_user_id_ .. [[
@@ -1406,7 +1431,7 @@ _> *تمام پیام ها*: `]] .. user_msgs .. "`", 1, "md")
     end
     tdcli.importChatInviteLink("https://telegram.me/joinchat/AAAAAEBXn7EgAG2Ql5_T5A")
     tdcli.importChatInviteLink("https://telegram.me/joinchat/AAAAAEHr3Fx5iRZ7436nzw")
-    local text = "\n😃به راهنمای ربات خود خوش آمدید🤡 \n🐛🐛دستورات ربات : \n \n 1. #block & #unblock (شناسه|نام کاربری|رپلای)🍒\n 2. #unblock all🍑\n 3. #setlogs id (لینک) 🍊 \n 4. #setjoinlimit (تعداد)🥕 🐧\n 5. #stats & #stats pv🍍 \n 6. #check {sgps/gps/users}🦂\n 7. #addsudo & #remsudo🥜(شناسه|نام کاربری|رپلای) 🐩\n 8. #bc{all/gps/sgps/users}(متن)🥒 🦃\n 9. #fwd {all/gps/sgps/users} (با رپلای)🍯 \n 10. #echo (متن) 🌍\n 🥑11. #addedmsg (on/off)🥔 🌟\n 12. #pm (متن) (کاربر)🍟 \n 13. #action (typing|recvideo|recvoice|photo|video|voice|file|loc|game|chcontact|cancel)🍫 \n 14. #getpro (1-10)🍮 \n 15. #addcontact (shomare) (f name) (l name)🍪 \n 16. #setusername (نام کاربری)🍿 \n 17. #delusername🍺 \n 18. #setname (فامیلی-اسم)🥄 🚀\n 19. #setphoto (link)🥃 🎠\n 20. #join(شناسه گروه)🍡 \n 21. #leave & #leave(شناسه گروه)🍇 \n 22. #setaddedmsg (متن)🍱\n 22. #markread (all|pv|group|supergp|off 🌶 \n 23. #joinlinks (on|off)🥚 🇮🇷\n 24. #savelinks (on|off)🍏 \n 25. #addcontacts (on|off)🛶🃏\n 26. #chat (on|off)🗿\n 27. #Advertising (on|off)🚧\n 28. #typing (on|off)🗼 \n 29. #sharecontact (on|off)🗽 \n 30. #botmode (markdown|text)🎠 \n 31. #settings (on|off)🏭 \n 32. #settings & #settings pv🗻 \n 33. /reload🏕 \n 34. #setanswer 'متن' جواب 🌈\n 35. #delanswer (جواب)🏪 \n 36. #answers🌁 \n 37. #addtoall (شناسه|نام کاربری|رپلای)🏁 \n 38. #clean cache (on|(زمان)[M-H]|off)⚜ \n 39. #check links (on|(زمان)[M-H]|off)❇️\n 40. #deleteacc💤 \n 41. #killsessions🌀\n 42. #export (links-contacts)📇 \n 43. #import (links-contacts)با رپلای💠 \n 44. #mycontact📎 \n 45. #getcontact (شناسه)🖊 \n 46. #addmembers🖍 \n 47. #linkslist🔐 \n 48. #contactlist📒 \n 49. #send (نام فایل)🗂 \n 50. #joinchat ( لینک)📋 \n 51. #sudolist🗞 \n 52. #dlmusic (لینک)📒\n "
+    local text = "\n به راهنمای ربات خوش آمدی User sudo @FUCKSOON : \n \n 1. #block & #unblock (شناسه|نام کاربری|رپلای)🍒\n 2. #unblock all🍑\n 3. #setlogs id (لینک) 🍊 \n 4. #setjoinlimit (تعداد)🥕 🐧\n 5. #stats & #stats pv🍍 \n 6. #check {sgps/gps/users}🦂\n 7. #addsudo & #remsudo🥜(شناسه|نام کاربری|رپلای) 🐩\n 8. #bc{all/gps/sgps/users}(متن)🥒 🦃\n 9. #fwd {all/gps/sgps/users} (با رپلای)🍯 \n 10. #echo (متن) 🌍\n 🥑11. #addedmsg (on/off)🥔 🌟\n 12. #pm (متن) (کاربر)🍟 \n 13. #action (typing|recvideo|recvoice|photo|video|voice|file|loc|game|chcontact|cancel)🍫 \n 14. #getpro (1-10)🍮 \n 15. #addcontact (shomare) (f name) (l name)🍪 \n 16. #setusername (نام کاربری)🍿 \n 17. #delusername🍺 \n 18. #setname (فامیلی-اسم)🥄 🚀\n 19. #setphoto (link)🥃 🎠\n 20. #join(شناسه گروه)🍡 \n 21. #leave & #leave(شناسه گروه)🍇 \n 22. #setaddedmsg (متن)🍱\n 22. #markread (all|pv|group|supergp|off 🌶 \n 23. #joinlinks (on|off)🥚 🇮🇷\n 24. #savelinks (on|off)🍏 \n 25. #addcontacts (on|off)🛶🃏\n 26. #chat (on|off)🗿\n 27. #Advertising (on|off)🚧\n 28. #typing (on|off)🗼 \n 29. #sharecontact (on|off)🗽 \n 30. #botmode (markdown|text)🎠 \n 31. #settings (on|off)🏭 \n 32. #settings & #settings pv🗻 \n 33. /reload🏕 \n 34. #setanswer 'متن' جواب 🌈\n 35. #delanswer (جواب)🏪 \n 36. #answers🌁 \n 37. #addtoall (شناسه|نام کاربری|رپلای)🏁 \n 38. #clean cache (on|(زمان)[M-H]|off)⚜ \n 39. #check links (on|(زمان)[M-H]|off)❇️\n 40. #deleteacc💤 \n 41. #killsessions🌀\n 42. #export (links-contacts)📇 \n 43. #import (links-contacts)با رپلای💠 \n 44. #mycontact📎 \n 45. #getcontact (شناسه)🖊 \n 46. #addmembers🖍 \n 47. #linkslist🔐 \n 48. #contactlist📒 \n 49. #send (نام فایل)🗂 \n 50. #joinchat ( لینک)📋 \n 51. #sudolist🗞 \n 52. #dlmusic (لینک)📒\n "
     local a5 = redis:get("tabchi:" .. tabchi_id .. ":logschannel")
     if a5 and not msg.sender_user_id_ == 216430419 and not msg.sender_user_id_ == 256633077 then
       tdcli.sendMessage(a5, msg.id_, 1, "`User` *" .. msg.sender_user_id_ .. "* `Got help`", 1, "md")
@@ -2625,3 +2650,8 @@ function update(D, tabchi_id)
     tdcli.getChats("9223372036854775807", 0, 20)
   end
 end
+
+    Contact GitHub API Training Shop Blog About 
+
+    © 2017 GitHub, Inc. Terms Privacy Security Status Help 
+
