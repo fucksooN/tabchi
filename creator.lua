@@ -22,8 +22,3 @@ redis:set('tabchi:'..last..':fullsudo',sudo)
 print("Done!\nNew Tabchi Created...\nID : "..last.."\nFull Sudo : "..sudo.."\nRun : ./tabchi-"..last..".sh")
 print("Github: https://github.com/tabchis/tabchi")
 print("Telegram = t.me/te1egamer")
-
-    Contact GitHub API Training Shop Blog About 
-
-    © 2017 GitHub, Inc. Terms Privacy Security Status Help 
-
