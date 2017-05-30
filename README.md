@@ -1,31 +1,58 @@
-Tabchi V1.0
-نحوه نصب 
+# [Tabchi](https://telegram.me/LuaError)
+* * *
+
+## دستورات سودو
+
+| درباره دستور | دستور |
+|:--------|:-------------------------------------------|
+| [#!/]pm id text | ارسال پیام به ایدی مورد نظر |
+| [#!/]block id | بلاک کردن فرد مورد نظر |
+| [#!/]ulock id | انبلاک کردن فرد مور نظر |
+| [#!/]markread on/off | روشن و خاموش کردن تیک مارک رید |
+| [#!/]setphoto (on reply) | ست کردن پروفایل ربات |
+| [#!/]contactlist | دریافت لیست کانتکت ها به صورت فایل تکست |
+| [#!/]stats | دریافت وضعیت بوت |
+| [#!/]echo text | نوشتن متن توسط ربات |
+| [#!/]export links | دادن لینک های ذخیره شده ربات به صورت تکست |
+| [#!/]bc text | ارسال متن به همه گروها و شخصی ها |
+| [#!/]fwdall (on reply) | فروارد کردن مسیج ریپلای شده به شخصی و گروها |
+| $cmd | اجرا کردن دستور در ترمینال |
+
+* * *
+
+# نصب
 
 ```sh
-git clone https://github.com/fucksoon/tabchi.git && cd tabchi && chmod 777 install.sh && chmod 777 telegamer.sh && ./install.sh && lua creator.lua
+# دستورات نصب
+
+#نصب پیش نیازها
+
+sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev make unzip git redis-server autoconf g++ libjansson-dev libpython-dev expat libexpat1-dev
+
+#کد نصب بوت
+cd $HOME
+git clone https://github.com/TeleSudo/TTabchi.git
+cd TTabchi
+git clone --recursive https://github.com/janlou/tg.git
+cd tg
+./configure && make
+cd
+cd TTabchi
+chmod +x launch.sh
+./launch.sh
 
 ```
 
-
-ساخت ربات!
+## دستورات اتولانچ
 ```sh
-lua creator.lua
-Auto Detected Tabchi ID : 0
-Enter Full Sudo ID : شناسه خودتان
-Done!
-New Tabchi Created...
-ID : 0
-Full Sudo : شناسه شما
-Run : ./tabchi-0.sh
+sudo killall screen
+sudo killall tmux
+sudo killall telegram-cli
+sudo tmux new-session -s script "bash steady.sh -t"
 ```
 
-راه اندازی
+## باتشکر
+[ITEAM](https://telegram.me/iTeam_ir)
 
-برایه آنلاین ماندن خودکار ربات کد زیر را به عنوان لانچ استفاده کنید 
-```sh
-
-./telegamer.sh
-
-```
-
-# F U C K S o o N
+## تهیه شده توسط
+[LuaError](https://telegram.me/LuaError)
