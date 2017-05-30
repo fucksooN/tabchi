@@ -1,6 +1,6 @@
 #!/bin/bash
 # =====================================================================================================
-# Copyright (C) steady.sh v1.2 2016 @LuaError (@@LuaError1)
+# Copyright (C) steady.sh v1.2 2016 @FUCKSOON (@@FUCKSOON)
 # =====================================================================================================
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -57,7 +57,7 @@ cat << EOF
  
 EOF
 echo -e "                \e[100m                Steady script           \e[00;37;40m"
-echo -e "               \e[01;34m                    by @LuaError                \e[00;37;40m"
+echo -e "               \e[01;34m                    by @FUCKSOON                \e[00;37;40m"
 echo ""
 cat << EOF
  $bld$f1▄ ▀▄   ▄▀ ▄   $f2 ▄▄▄████▄▄▄    $f3  ▄██▄     $f4▄ ▀▄   ▄▀ ▄   $f5 ▄▄▄████▄▄▄    $f6  ▄██▄  $rst
@@ -208,7 +208,7 @@ cat << EOF
  
 EOF
 echo -e "                \e[100m                Steady script           \e[00;37;40m"
-echo -e "               \e[01;34m                    by @LuaError                \e[00;37;40m"
+echo -e "               \e[01;34m                    by @FUCKSOON              \e[00;37;40m"
 echo ""
 cat << EOF
  $bld$f1▄ ▀▄   ▄▀ ▄   $f2 ▄▄▄████▄▄▄    $f3  ▄██▄     $f4▄ ▀▄   ▄▀ ▄   $f5 ▄▄▄████▄▄▄    $f6  ▄██▄  $rst
