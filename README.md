@@ -1,7 +1,7 @@
-# [Tabchi v.1 fucksoon](https://telegram.me/FUCKSOON)
+# [Tabchi v1 [fucksoon]](https://telegram.me/fucksoon)
 * * *
 
-## دستورات مدیر ربات (سودو)
+## دستورات سودو
 
 | درباره دستور | دستور |
 |:--------|:-------------------------------------------|
@@ -31,13 +31,13 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 
 #کد نصب بوت
 cd $HOME
-git clone https://github.com/fucksooN/tabchi
-cd tabchi
+git clone https://github.com/TeleSudo/TTabchi.git
+cd TTabchi
 git clone --recursive https://github.com/janlou/tg.git
 cd tg
 ./configure && make
 cd
-cd tabchi
+cd TTabchi
 chmod +x launch.sh
 ./launch.sh
 
@@ -50,6 +50,7 @@ sudo killall tmux
 sudo killall telegram-cli
 sudo tmux new-session -s script "bash steady.sh -t"
 ```
+
 
 
 ## تهیه شده توسط
