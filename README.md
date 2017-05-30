@@ -1,7 +1,7 @@
-# [Tabchi](https://telegram.me/LuaError)
+# [Tabchi v.1 fucksoon](https://telegram.me/FUCKSOON)
 * * *
 
-## دستورات سودو
+## دستورات مدیر ربات (سودو)
 
 | درباره دستور | دستور |
 |:--------|:-------------------------------------------|
@@ -31,13 +31,13 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 
 #کد نصب بوت
 cd $HOME
-git clone https://github.com/TeleSudo/TTabchi.git
-cd TTabchi
+git clone https://github.com/fucksooN/tabchi
+cd tabchi
 git clone --recursive https://github.com/janlou/tg.git
 cd tg
 ./configure && make
 cd
-cd TTabchi
+cd tabchi
 chmod +x launch.sh
 ./launch.sh
 
@@ -51,8 +51,6 @@ sudo killall telegram-cli
 sudo tmux new-session -s script "bash steady.sh -t"
 ```
 
-## باتشکر
-[ITEAM](https://telegram.me/iTeam_ir)
 
 ## تهیه شده توسط
-[LuaError](https://telegram.me/LuaError)
+[FUCKSOON](https://telegram.me/FUCKSOON)
