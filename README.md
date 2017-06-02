@@ -1,3 +1,7 @@
+از ورژن دوم ما هم دیدن کنین ⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️
+
+# [Tabchi v2 [fucksoon]](https://github.com/fucksooN/tabchi_v2)
+
 # [Tabchi v1 [fucksoon]](https://telegram.me/fucksoon)
 * * *
 
