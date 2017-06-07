@@ -1,7 +1,3 @@
-<!-- Start Cod Music Samentheme.ir ---><center>
-<script language="javascript" src="http://webtools.samentheme.ir/st/music/p.php?type=1&s=200=&files=https://www.tarafdari.com/sites/default/files/contents/user196737/content-sound/avril-lavigne-pop-rock-rock-n-roll.mp3&start=1&replay=1&vol=100"></script><div style="display:none"><h2><br><a href="http://www.Samentheme.ir/">ساخت کد موزیک آنلاین</a></h2></div>
-<a href="http://webtools.samentheme.ir/tools/musiconline.php" target="_blank">FUCKSOOن</a></center><!-- End Cod Music 
-
 
 
 از ورژن دوم ما هم دیدن کنین
